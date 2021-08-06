@@ -4,6 +4,74 @@
 <head>
     <meta charset="utf-8">
     <title>minimum sample</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #root {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background-color: #666;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav ul a:hover {
+            color: #aaa;
+        }
+
+        header {
+            background: url(https://source.unsplash.com/random/600x200?p=1) center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            text-shadow: 0 0 5px #333;
+        }
+
+        main {
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer {
+            background-color: #666;
+            color: #fff;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,14 +89,14 @@
         <main>
             <section>
                 <h2>Information</h2>
-                <img src="https://source.unsplash.com/random/200x200"/>
+                <img src="https://source.unsplash.com/random/300x300" />
                 <div>
                     <p>Welcome to our website.</p>
                 </div>
             </section>
         </main>
         <footer>
-            footer
+            &copy minimum sample.
         </footer>
     </div>
 </body>
