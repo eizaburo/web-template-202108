@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>minimum sample</title>
+
     <style>
         body {
             margin: 0;
@@ -39,7 +41,7 @@
         }
 
         header {
-            background: url(https://source.unsplash.com/random/600x200?p=1) center/cover;
+            background: url(https://source.unsplash.com/random/600x200) center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -70,6 +72,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 30px;
+        }
+
+        @media screen and (min-width:640px) {
+
+            nav,
+            footer {
+                background-color: #669;
+            }
+
+            main {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
         }
     </style>
 </head>
@@ -88,8 +106,15 @@
         </header>
         <main>
             <section>
-                <h2>Information</h2>
-                <img src="https://source.unsplash.com/random/300x300" />
+                <h3>Information1</h3>
+                <img src="https://source.unsplash.com/random/300x300?p=1" />
+                <div>
+                    <p>Welcome to our website.</p>
+                </div>
+            </section>
+            <section>
+                <h3>Information2</h3>
+                <img src="https://source.unsplash.com/random/300x300?p=2" />
                 <div>
                     <p>Welcome to our website.</p>
                 </div>
